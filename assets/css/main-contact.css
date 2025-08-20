@@ -1,0 +1,200 @@
+.main-contact {
+  padding-block: calc(var(--spacing) * 20);
+  padding-inline: calc(var(--spacing) * 6);
+  background-color: color-mix(in oklab, var(--muted) 50%, transparent);
+  margin-top: calc(var(--spacing) * 2);
+}
+
+.main-contact-container {
+  max-width: var(--container-6xl);
+  margin-inline: auto;
+}
+
+.main-contact-content {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-items: flex-start;
+  gap: calc(var(--spacing) * 16);
+}
+
+@media (min-width: 64rem) {
+  .main-contact-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.help-panel-title {
+  color: var(--foreground);
+  font-size: var(--text-4xl);
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+  margin-bottom: calc(var(--spacing) * 6);
+}
+
+.help-panel-description {
+  color: var(--muted-foreground);
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  margin-bottom: calc(var(--spacing) * 8);
+}
+
+.help-panel-items {
+  gap: calc(var(--spacing) * 6);
+}
+
+.help-panel-item {
+  gap: calc(var(--spacing) * 4);
+  align-items: center;
+  display: flex;
+}
+
+.help-panel-item-icon-container {
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+  border-radius: var(--radius);
+  justify-content: center;
+  align-items: center;
+  width: calc(var(--spacing) * 12);
+  height: calc(var(--spacing) * 12);
+  display: flex;
+}
+
+.help-panel-item-icon {
+  color: var(--primary);
+  width: calc(var(--spacing) * 6);
+  height: calc(var(--spacing) * 6);
+}
+
+.help-panel-item-title {
+  color: var(--foreground);
+  margin-bottom: calc(var(--spacing) * 1);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.help-panel-item-description {
+  color: var(--muted-foreground);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+}
+
+.main-contact-form-container {
+  padding: calc(var(--spacing) * 8);
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.main-contact-form-title {
+  color: var(--foreground);
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  margin-bottom: calc(var(--spacing) * 6);
+}
+
+.main-contact-form {
+  display: grid;
+  gap: calc(var(--spacing) * 6);
+}
+
+.main-contact-form-personal {
+  gap: calc(var(--spacing) * 4);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  display: grid;
+}
+
+@media (min-width: 40rem) {
+  .main-contact-form-personal {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.main-contact-form-item {
+  gap: calc(var(--spacing) * 2);
+}
+
+.form-label {
+  -webkit-user-select: none;
+  user-select: none;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  --tw-leading: 1;
+  line-height: 1;
+  font-size: var(--text-sm);
+}
+
+.text-input {
+  --tw-outline-style: none;
+  outline-style: none;
+  transition-property: color, box-shadow;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  padding-block: calc(var(--spacing) * 1);
+  padding-inline: calc(var(--spacing) * 3);
+  background-color: var(--input-background);
+  border: 1px solid var(--input);
+  border-radius: calc(var(--radius) - 2px);
+  min-width: calc(var(--spacing) * 0);
+  width: 100%;
+  height: calc(var(--spacing) * 9);
+  display: flex;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  cursor: auto;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+}
+
+.text-input::selection {
+  color: var(--primary-foreground);
+  background-color: var(--primary);
+}
+
+.text-input.text-area {
+  height: auto;
+}
+
+.send-message-button {
+  padding-inline: calc(var(--spacing) * 3);
+  --tw-outline-style: none;
+  outline-style: none;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  color: var(--primary-foreground);
+  white-space: nowrap;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  border-radius: calc(var(--radius) - 2px);
+  gap: calc(var(--spacing) * 2);
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: calc(var(--spacing) * 9);
+  display: inline-flex;
+  appearance: button;
+  font: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  opacity: 1;
+  background-color: color-mix(in oklab, var(--primary) 90%, transparent);
+}
+
+.send-message-button:hover {
+  opacity: 0.9;
+  background-color: color-mix(in oklab, var(--primary) 90%, transparent);
+  color: var(--primary-foreground);
+}
+
+.send-message-button-icon {
+  width: calc(var(--spacing) * 4);
+  height: calc(var(--spacing) * 4);
+}
+
