@@ -168,7 +168,7 @@
   height: calc(var(--spacing) * 80);
   background: var(--accent);
   outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
-  border-radius: var(--radius-3xl);
+  border-radius: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,15 +178,15 @@
 
 .logo-area {
   object-fit: cover;
-  border-radius: var(--radius-2xl);
+  /*border-radius: var(--radius-2xl);*/
   width: calc(var(--spacing) * 72);
   height: calc(var(--spacing) * 72);
-  background: white;
+  /*background: white;*/
 }
 
 .logo-card {
   object-fit: cover;
-  border-radius: var(--radius-2xl);
+  /*border-radius: var(--radius-2xl);*/
   width: calc(var(--spacing) * 72);
   height: calc(var(--spacing) * 72);
 }
