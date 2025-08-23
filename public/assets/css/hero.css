@@ -204,6 +204,7 @@
   right: calc(var(--spacing) * -4);
   position: absolute;
   border: 1px solid rgba(0,0,0,0.1);
+  text-decoration: none;
 }
 
 .apple-developer-badge-conent {
